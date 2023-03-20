@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width:1261px)" href="phone.css">
+    <title>food websities</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Ubuntu', sans-serif;
+            /* border-radius: 12px; */
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+        }
+        
+        #navbar::before {
+            content: "";
+            position: absolute;
+            background-image: url(img\ 3.jpg);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            top: 0px;
+            left: 0px;
+        }
+        
+        #navbar ul {
+            display: flex;
+        }
+        
+        #navbar ul li {
+            list-style-type: none;
+        }
+        
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 2rem;
+            font-size: 1.5rem;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        #logo {
+            margin: 3px 4px;
+        }
+        
+        #logo img {
+            margin: 15px 16px;
+            /* border: 1px solid black; */
+            border-radius: 12px;
+        }
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 558px;
+            position: relative;
+        }
+        
+        #home::before {
+            content: "";
+            position: absolute;
+            background: url(fd.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            top: 0px;
+            left: 0px;
+        }
+        
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+        
+        .h-secondary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        
+        h1 p {
+            color: wheat;
+            font-size: 1.8rem;
+        }
+        
+        #btn {
+            padding: 3px 10px;
+            background-color: black;
+            color: aqua;
+            border: 1px solid white;
+            border-radius: 10px;
+            margin: 15px;
+            font-size: 1.3rem;
+        }
+        
+        #btn:hover {
+            background-color: rgb(95, 81, 81);
+            cursor: pointer;
+        }
+        
+        #services-container .mbox {
+            display: flex;
+            padding: 45px;
+            margin: 3px 12px;
+        }
+        
+        #services-container .box {
+            border: 2px solid brown;
+            border-radius: 33px;
+            margin: 3px 12px;
+            background-color: rgb(160, 150, 150);
+        }
+        
+        #services-container .box p {
+            padding: 1px 12px;
+            text-align: center;
+        }
+        
+        #services-container .box img {
+            background-color: rgb(160, 150, 150);
+            display: block;
+            margin: 9px 69px;
+            width: 232px;
+            border-radius: 23px;
+        }
+        
+        #services-container .box .h-primary center {
+            display: block;
+        }
+        
+        #clients-section {
+            height: 270px;
+            position: relative;
+        }
+        
+        #clients-section::before {
+            content: "";
+            position: absolute;
+            background: url(fd.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.6;
+            top: 0;
+            bottom: 0;
+        }
+        
+        #clients-section #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #clients-section #clients .clients-item img {
+            width: 10vw;
+            border-radius: 10px;
+        }
+        
+        #clients-section #clients .clients-item {
+            padding: 34px;
+        }
+        
+        #contact-box {}
+        
+        #contact form .form-group {
+            /* display: flex; */
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        #contact {
+            position: relative;
+            height: 470px;
+        }
+        
+        #contact::before {
+            content: "";
+            position: absolute;
+            background: url(fd.jpg) no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            top: 0;
+            bottom: 0;
+        }
+        
+        footer {
+            background-color: black;
+            color: aliceblue;
+            padding: 3px 6px;
+            text-align: center;
+        }
+        
+        .contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        
+        .contact-box .form-group,
+        .contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-box form {
+            width: 40vw;
+        }
+        
+        .contact-box label {
+            font-size: 1.3rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        p {
+            /* font-size: 43px; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="fd.jpg" alt="My order list" width="120px">
+        </div>
+        <ul>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Location</a></li>
+            <li class="item"><a href="#">Services</a></li>
+            <li class="item"><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Food Corner</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit sapiente repellat nostrum, ad doloremque</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis similique</p>
+        <button id="btn">Order Now</button>
+    </section>
+    <div id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div class="mbox">
+            <div class="box">
+                <img src="logo 2.png" alt="error" width="134px" style="border-radius: 12px;">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In itaque esse est hic similique, ab totam a et quis odit quaerat vitae incidunt! ipsum dolor sit amet consectetur adipisicing elit. Natus delectus cupiditate cumque, neque nulla
+                    libero, ullam saepe tempore, provident ipsa vitae ducimus quasi!</p>
+            </div>
+            <div class="box">
+                <img src="logo3.png" alt="error" style="border-radius: 12px;">
+                <h2 class="h-secondary center">Fast Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nobis impedit ipsam nihil ullam! Error fuga sequi cum vel quo facere officia culpa? ipsum dolor sit amet consectetur adipisicing elit. Natus delectus cupiditate cumque, neque
+                    nulla libero, ullam saepe tempore, provident ipsa vitae ducimus quasi!</p>
+            </div>
+            <div class="box">
+                <img src="logo 2.png" alt="error" style="border-radius: 12px;">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eos consequuntur aut dolore exercitationem ad, nobis ex similique facilis nesciunt. Obcaecati, eum cumque. ipsum dolor sit amet consectetur adipisicing elit. Natus delectus
+                    cupiditate cumque, neque nulla libero, ullam saepe tempore, provident ipsa vitae ducimus quasi!</p>
+            </div>
+        </div>
+    </div>
+    <section id="clients-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="clients-item">
+                <img src="apple.jpg" alt="apple">
+            </div>
+            <div class="clients-item">
+                <img src="window.png" alt="window">
+            </div>
+            <div class="clients-item">
+                <img src="google.png" alt="google">
+            </div>
+            <div class="clients-item">
+                <img src="mi.png" alt="mi">
+            </div>
+        </div>
+        <section id="contact">
+            <h1 class="h-primary-center" style="font-size: 58px;">Contact Us</h1>
+            <div class="contact-box">
+                <form action="php.p">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone:</label>
+                        <input type="number" name="number" id="number" placeholder="Enter your number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="10" rows="10" placeholder="Enter the message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+</body>
+
+</html>
